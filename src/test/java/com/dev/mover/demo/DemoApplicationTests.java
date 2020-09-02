@@ -11,3 +11,8 @@ class DemoApplicationTests {
 	}
 
 }
+
+//spring context ..
+// responsible for instatianting, configuring and assembling the beans.. 
+
+//beans are java classes 
