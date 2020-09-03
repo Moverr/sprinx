@@ -20,8 +20,9 @@ public class Player {
     private Long id;
     
     String name;
-    Long teamId;
+   
 
+    String position;
     
     
     public Long getId() {
@@ -40,14 +41,15 @@ public class Player {
         this.name = name;
     }
 
-    public Long getTeamId() {
-        return teamId;
+    public String getPosition() {
+        return position;
     }
 
-    public void setTeamId(Long teamId) {
-        this.teamId = teamId;
+    public void setPosition(String position) {
+        this.position = position;
     }
-    
+
+ 
     
     
 }
