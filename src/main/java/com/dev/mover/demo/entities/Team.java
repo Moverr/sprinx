@@ -32,6 +32,15 @@ public class Team {
     @OneToMany(cascade = CascadeType.ALL) @JoinColumn(name="teamId")
     Set<Player> players;
 
+    public Team(String name, String location, String mascotte, Set<Player> players) {
+        this.name = name;
+        this.location = location;
+        this.mascotte = mascotte;
+        this.players = players;
+    }
+
+    
+    
     public Long getId() {
         return id;
     }

@@ -17,12 +17,14 @@ import javax.persistence.Id;
 @Entity
 public class Player {
     @Id @GeneratedValue
-    private Long id;
-    
-    String name;
-   
-
+    private Long id; 
+    String name; 
     String position;
+
+    public Player(String name, String position) {
+        this.name = name;
+        this.position = position;
+    }
     
     
     public Long getId() {
